@@ -1,0 +1,217 @@
+Index: SummerProjects/Media_Player/app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SummerProjects/Media_Player/app/src/main/res/layout/activity_main.xml	(date 1529902176913)
++++ SummerProjects/Media_Player/app/src/main/res/layout/activity_main.xml	(date 1529902176913)
+@@ -0,0 +1,155 @@
++<?xml version="1.0" encoding="utf-8"?>
++<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".MainActivity">
++
++    <Button
++        android:id="@+id/button"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginBottom="8dp"
++        android:layout_marginEnd="8dp"
++        android:layout_marginStart="8dp"
++        android:layout_marginTop="8dp"
++        android:text="PLAY"
++        android:onClick="play"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.142"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.109" />
++
++    <Button
++        android:id="@+id/button2"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginBottom="8dp"
++        android:layout_marginEnd="8dp"
++        android:layout_marginStart="8dp"
++        android:layout_marginTop="8dp"
++        android:text="PAUSE"
++        android:onClick="pause"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.853"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.109" />
++
++    <Button
++        android:id="@+id/button3"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginBottom="8dp"
++        android:layout_marginEnd="8dp"
++        android:layout_marginStart="8dp"
++        android:layout_marginTop="8dp"
++        android:text="SELECT"
++        android:onClick="select"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.142"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.31" />
++
++    <Button
++        android:id="@+id/button4"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginBottom="8dp"
++        android:layout_marginEnd="8dp"
++        android:layout_marginStart="8dp"
++        android:layout_marginTop="8dp"
++        android:text="STOP"
++        android:onClick="stop"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.853"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.31" />
++
++    <Button
++        android:id="@+id/button5"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginBottom="8dp"
++        android:layout_marginEnd="8dp"
++        android:layout_marginStart="8dp"
++        android:layout_marginTop="8dp"
++        android:onClick="exit"
++        android:text="EXIT"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.935" />
++
++    <SeekBar
++        android:id="@+id/seekBar"
++        android:layout_width="326dp"
++        android:layout_height="45dp"
++        android:layout_marginBottom="8dp"
++        android:layout_marginEnd="8dp"
++        android:layout_marginStart="8dp"
++        android:layout_marginTop="8dp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.662" />
++
++    <Button
++        android:id="@+id/button6"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginBottom="8dp"
++        android:layout_marginEnd="8dp"
++        android:layout_marginStart="8dp"
++        android:layout_marginTop="8dp"
++        android:text="PREV"
++        android:onClick="prev"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.346"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.498" />
++
++    <Button
++        android:id="@+id/button7"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginBottom="8dp"
++        android:layout_marginEnd="8dp"
++        android:layout_marginStart="8dp"
++        android:layout_marginTop="8dp"
++        android:text="NEXT"
++        android:onClick="next"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.66"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.498" />
++
++    <Button
++        android:id="@+id/button8"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginBottom="8dp"
++        android:layout_marginEnd="8dp"
++        android:layout_marginStart="8dp"
++        android:layout_marginTop="8dp"
++        android:text="Splash"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.827" />
++</android.support.constraint.ConstraintLayout>
+\ No newline at end of file
+Index: SummerProjects/Media_Player/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SummerProjects/Media_Player/.idea/vcs.xml	(date 1540306487938)
++++ SummerProjects/Media_Player/.idea/vcs.xml	(date 1540306487938)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: SummerProjects/Media_Player/.idea/codeStyles/Project.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SummerProjects/Media_Player/.idea/codeStyles/Project.xml	(date 1540306488148)
++++ SummerProjects/Media_Player/.idea/codeStyles/Project.xml	(date 1540306488148)
+@@ -0,0 +1,29 @@
++<component name="ProjectCodeStyleConfiguration">
++  <code_scheme name="Project" version="173">
++    <Objective-C-extensions>
++      <file>
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Import" />
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Macro" />
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Typedef" />
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Enum" />
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Constant" />
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Global" />
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Struct" />
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="FunctionPredecl" />
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Function" />
++      </file>
++      <class>
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Property" />
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="Synthesize" />
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="InitMethod" />
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="StaticMethod" />
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="InstanceMethod" />
++        <option name="com.jetbrains.cidr.lang.util.OCDeclarationKind" value="DeallocMethod" />
++      </class>
++      <extensions>
++        <pair source="cpp" header="h" fileNamingConvention="NONE" />
++        <pair source="c" header="h" fileNamingConvention="NONE" />
++      </extensions>
++    </Objective-C-extensions>
++  </code_scheme>
++</component>
+\ No newline at end of file
